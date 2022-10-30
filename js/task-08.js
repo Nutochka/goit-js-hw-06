@@ -17,10 +17,12 @@ function handleSubmit(event) {
   const passwordEmail = form.password.name;
   const passwordValue = password.value;
 
-  console.log({
-    nameEmail: valueEmail,
-    passwordEmail: passwordValue,
-  })
+  if (email.value !== "" && password.value !== "") {
+    console.log({
+      nameEmail: valueEmail,
+      passwordEmail: passwordValue,
+    })
+  }
 
   event.currentTarget.reset();
 }

@@ -15,5 +15,3 @@ counterButtonDecrement.addEventListener("click", () => {
     counterValue -=1;
     currentValue.textContent = counterValue;
 });
-
-console.log(counterValue);
